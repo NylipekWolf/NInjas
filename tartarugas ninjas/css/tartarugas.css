@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", sans-serif;
+    font-family: Noto Sans JP;
+}
+body{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.music{
+    height: 25rem;
+    width: 120%;
+    margin-bottom: 2.7rem;
+}
+span{
+    font-weight: 900;
+}
+h1{
+    font-family: Archivo Narrow;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(155, 255, 5);
+    font-size: 1.9rem;
+}
+p{
+    font-weight: 600;
+}
+.click{
+    width: 0px;
+    transition: 0.5s;
+}
+.cabecalho {
+    background-color: #336699;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    height: 12vh;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.conteudo{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.artigo {
+    width: 60%;
+    padding:1%;
+    display: inline-block;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+.artigo h2{
+    margin-bottom: 5px;
+}
+.artigo a{
+    color: #336699;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
+}
+.artigo a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+.artigo p{
+    border-top: .07px solid black;
+    border-bottom: .07px solid black;
+    padding: 0.82rem 0.8rem;
+}
+.artigo div{
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artigo .img{
+    width: 60%;
+    margin-top: 4%;
+}
+.artigo .centro{
+    display: flex;
+    justify-content: center;
+}
+.artigo .galeria{
+    display: flex;
+    overflow-x: auto;
+    flex-direction: initial;
+    justify-content: flex-start;
+    width: 65%;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.artigo .galeria .items{
+    width: 100%;
+    height: 520px;
+    flex: none;
+    scroll-snap-align: start;
+}
+.artigo .galeria .items img{
+    height: 100%;
+    width:100%;
+    border-radius: 10px;
+}
+#arma{
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 8px 0;
+}
+.perfil{
+    display:block;
+    margin: 25px auto;
+    max-width: 30%;
+}
+.barra-lateral-esquerda, .barra-lateral-direita {
+    width:15%;
+    display:inline-block;
+    height:80vh;
+}
+.barra-lateral-esquerda ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 1%;
+}
+.barra-lateral-esquerda li {
+    padding: 8px;
+    background-color: #336699;
+    margin: 1.2rem auto;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.barra-lateral-esquerda{
+    background: white;
+    margin-top: 30px;
+}
+.barra-lateral-esquerda li a {
+    color: #ffffff;
+    text-decoration: none;
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start !important;
+    font-size: 100%;
+}
+.barra-lateral-esquerda ul #foto{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+.barra-lateral-direita{
+    background: white;
+    margin-top: 30px;
+    height: auto;
+}
+.barra-lateral-direita h2{
+    color: #336699;
+    margin-bottom: 10px;
+    border-bottom: .07px solid black;
+}
+.barra-lateral-direita p{
+    font-size: 120%;
+}
+.barra-lateral-direita img{
+    width: 100%;
+}
+.rodape {
+    background:#336699;
+    padding:1%;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}  
+.rodape #pizza{
+    margin-right: 30px;
+}
+.rodape #pizza a {
+    text-decoration: none;
+    color: yellow;
+}
+#Leo:hover{
+    background:#336699;
+    box-shadow: inset 0 0 10px 5px #5aabfc;
+    border-radius: 5px;
+}
+#Leo:hover> a .click{
+    width: 100%;
+}
+#Don:hover{
+    background: #a15ad4;
+    box-shadow: inset 0 0 10px 5px #f755f7;
+    border-radius: 5px;
+}
+#Don:hover> a .click{
+    width: 100%;
+}
+#Mic:hover{
+    background: #c7832e;
+    box-shadow: inset 0 0 10px 5px #fcb65a;
+    border-radius: 5px;
+}
+#Mic:hover> a .click{
+    width: 100%;
+}
+#Raf:hover{
+    background: #d7131d;
+    box-shadow: inset 0 0 10px 5px #ff343e;
+    border-radius: 5px;
+}
+#Raf:hover> a .click{
+    width: 100%;
+}
+#inicio:hover{
+    background: #11b339;
+    box-shadow: inset 0 0 10px 5px #52f08e;
+    border-radius: 5px;
+}
+#inicio:hover> a .click{
+    width: 100%;
+}
+/*    donatello     */
+
+.donatello .cabecalho{
+    background-color: #a15ad4;
+}
+.donatello .barra-lateral-esquerda li{
+    background: #a15ad4;
+}
+.donatello .barra-lateral-direita h2{
+    color: #a15ad4;
+}
+.donatello .rodape{
+    background: #a15ad4;
+}
+.donatello .artigo a{
+    color: #a15ad4;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+}
+.donatello .artigo a:hover{
+    color: rgb(255, 238, 1);
+    text-decoration: underline;
+}
+/*    michelangelo     */
+
+.michelangelo .cabecalho{
+    background: #c7832e;
+}
+.michelangelo .barra-lateral-esquerda li{
+    background: #c7832e;
+}
+.michelangelo .barra-lateral-direita h2{
+    color: #c7832e;
+}
+.michelangelo .rodape{
+    background: #c7832e;
+}
+.michelangelo .barra-lateral-direita a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-size: 300;
+}
+.michelangelo .barra-lateral-direita a:hover{
+    color: rgb(255, 238, 1);
+}
+.michelangelo .artigo a{
+    color: #c7832e;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+}
+.michelangelo .artigo a:hover{
+    color: rgb(255, 238, 1);
+    text-decoration: underline;
+}
+/*    rafael     */
+
+.raphael .cabecalho{
+    background: #d7131d;
+}
+.raphael .barra-lateral-esquerda li{
+    background: #d7131d;
+}
+.raphael .barra-lateral-direita h2{
+    color: #d7131d;
+}
+.raphael .rodape{
+    background: #d7131d;
+}
+.raphael .artigo a{
+    color: #d7131d;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+}
+.raphael .artigo a:hover{
+    color: rgb(255, 238, 1);
+    text-decoration: underline;
+}
+/*      inicio          */
+
+.inicio .cabecalho{
+    background: #11b339;
+}
+.inicio .barra-lateral-esquerda li{
+    background: #11b339;
+}
+.inicio .barra-lateral-direita h2{
+    color: #11b339;
+}
+.inicio .rodape{
+    background: #11b339;
+}
+.inicio .artigo a{
+    color: #11b339;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+}
+.inicio .artigo a:hover{
+    color: rgb(255, 238, 1);
+    text-decoration: underline;
+}
+/* Desse ponto em diante estamos falando em responsive*/
+@media screen and (max-width: 426px) {
+    h1{
+        font-size: 150%;
+    }
+    iframe{
+        height: 300px;
+    }
+    .music{
+        margin-bottom: 1.7rem;
+        width: 100%;
+        height: 220px;
+    }
+    .cabecalho{
+        height: auto;
+    }
+    .barra-lateral-esquerda, .barra-lateral-direita {
+        width: 100%;
+        height: 100%;
+        padding:2%;
+        margin-top: 0;
+    }
+    .barra-lateral-esquerda{
+        margin-right: 0px;
+    }
+    .artigo{
+        padding:2%;
+        width:100%;
+        display: inline-block;
+        margin-left: 0px;
+    }
+    .artigo .img{
+        width: 60%;
+    }
+    .artigo p {
+        padding: 1%;
+        font-size: 90%;
+    }
+    .artigo .galeria{
+        width: 80%;
+    }
+    .artigo .galeria .items{
+        width: 100%;
+        height:400px;
+        flex: none;
+        scroll-snap-align: start;
+    }
+    #arma{
+        font-size: 1.5rem;
+    }
+    .perfil{
+        max-width: 50%;
+    }
+    .barra-lateral-esquerda{
+        margin-right: 0;
+    }
+    #Leo:hover> a .click{
+        width: 0;
+        opacity: 0;
+    }
+    #Don:hover> a .click{
+        width: 0;
+        opacity: 0;
+    }
+    #Mic:hover> a .click{
+        width: 0;
+        opacity: 0;
+    }
+    #Raf:hover> a .click{
+        width: 0;
+        opacity: 0;
+    }
+    .barra-lateral-direita div{
+        justify-content: center;
+        display: flex;
+    }
+    .barra-lateral-direita .armas{
+        width: 80%;
+    }
+    .rodape {
+        padding:5% 6%;
+        height: auto;
+    }    
+    .rodape p {
+        font-size: 70%;
+    }
+    .rodape #pizza{
+        margin-right: 0;
+    }
+}
